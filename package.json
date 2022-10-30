@@ -1,0 +1,32 @@
+{
+  "name": "stocker",
+  "version": "0.0.1",
+  "description": "Hightly opinionated OMS and WMS system build with modern web principles",
+  "main": "index.js",
+  "repository": "git@github.com-personal:ananthu-kurup/stocker",
+  "author": "Ananthapadmanabha Kurup M <ananthu-kurup@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.7.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^18.11.7",
+    "nodemon": "^2.0.20",
+    "ts-loader": "^9.4.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-node-externals": "^3.0.0",
+    "webpack-shell-plugin-next": "^2.2.2"
+  },
+  "scripts": {
+    "start:dev": "rimraf dist && webpack --env mode=development",
+    "run:dev": "NODE_ENV=development nodemon dist/server/index.js"
+  }
+}
